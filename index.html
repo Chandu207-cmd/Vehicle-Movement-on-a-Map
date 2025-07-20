@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicle Movement Simulator</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="controls">
+    <button id="playPauseBtn">▶️ Play</button>
+    <button id="restartBtn">🔁 Restart</button>
+
+     <label for="speedControl">Speed:</label>
+  <select id="speedSelect">
+  <option value="20">20 km/h</option>
+  <option value="40">40 km/h</option>
+  <option value="60">60 km/h</option>
+  <option value="80">80 km/h</option>
+  <option value="100">100 km/h</option>
+</select>
+  
+    <div id="info">
+      <p>Coords: <span id="coords">-</span></p>
+      <p>Timestamp: <span id="timestamp">-</span></p>
+      <p>Speed: <span id="speed">-</span></p>
+    </div>
+  </div>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#map {
+  height: 90vh;
+  width: 100%;
+}
+
+#controls {
+  padding: 10px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#info p {
+  margin: 4px 10px;
+  display: inline-block;
+}
